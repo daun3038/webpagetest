@@ -1,50 +1,86 @@
+<!DOCTYPE html>
 <html>
 <head>
-    <title> 👏🏻 Daun's Webpage 👏🏻</title>
+    <title>👏🏻 Daun's Webpage 👏🏻</title>
     <style>
-        h1 {color: rgb(78, 19, 129);}
-        h3 {color: rgb(203, 119, 186);}
+        body {
+            font-family: Arial, sans-serif; /* 폰트 설정 */
+            background-color: #f7f7f7; /* 배경색 설정 */
+            padding: 20px; /* 전체 내부 여백 설정 */
+        }
+        table {
+            width: 100%; /* 표 전체 너비 설정 */
+            border-collapse: collapse; /* 표 테두리 분리 설정 */
+            margin-bottom: 20px; /* 표와 다음 요소 간 여백 설정 */
+        }
+        th, td {
+            padding: 10px; /* 셀 내부 여백 설정 */
+            text-align: center; /* 셀 텍스트 가운데 정렬 */
+            border: 1px solid #ddd; /* 테두리 스타일 설정 */
+        }
+        th {
+            background-color: #4e1381; /* 테이블 헤더 배경색 설정 */
+            color: white; /* 테이블 헤더 텍스트 색상 설정 */
+        }
+        td a {
+            color: #7e50a7; /* 링크 색상 변경 */
+            text-decoration: none; /* 링크 밑줄 제거 */
+            transition: color 0.3s ease; /* 색상 변화에 따른 부드러운 전환 효과 추가 */
+        }
+        td a:hover {
+            color: #cb77ba; /* 호버 상태일 때 링크 색상 변경 */
+        }
     </style>
 </head>
 
 <body>
-    <h1> 정다운의 웹프로그래밍 실습기록 </h1>
-    <br>
-    <h3> • 1주차 실습기록 </h3>
-    <a href = "https://thisisday1.netlify.app">1주차</a><br>
-    <br>
-    <hr>
-    <br>
-    <h3> • 3주차 실습기록 </h3>
-    <a href = "day0321/ch3_test/table.html">3주차 table</a><br>
-    <a href = "day0321/ch3_test/text_anchor.html">3주차 text_anchor</a><br>
-    <a href = "day0321/ch3_test/text_anchorlnner.html">3주차 text_anchorlnner</a><br>
-    <a href = "day0321/ch3_test/loginclass.html">3주차 47p loginclass</a><br>
-    <a href = "sign-in/sign/sign-in.html">3주차 sign-in</a><br>
-    <br>
-    <hr>
-    <br>
-    <h3> • 4주차 실습기록 </h3>
-    <a href = "day0328/5_2.html">4주차 5_2</a><br>
-    <a href = "day0328/attribute_basic.html">4주차 attribute_basic</a><br>
-    <a href = "day0328/default_class.html">4주차 default_class</a><br>
-    <a href = "day0328/default_multiClass.html">4주차 default_multiClass</a><br>
-    <a href = "day0328/desc_descendants.html">4주차 desc_descendants</a><br>
-    <a href = "day0328/desc_tableWithChildren.html">4주차 desc_tableWithChildren</a><br>
-    <a href = "day0328/ect_structure.html">4주차 ect_structure</a><br>
-    <a href = "day0328/etc_state.html">4주차 ect_state</a><br>
-    <a href = "day0328/etc_structureFalse.html">4주차 ect_structureFalse</a><br>
-    <a href = "day0328/size_basic.html">4주차 size_basic</a><br>
-    <br>
-    <hr>
-    <br>
-    <h3> • 5주차 실습기록 </h3>
-    <br>
-    <h5> • HTML </h3>
-    <a href = "day0404/evthandle.html">4주차 evthandle</a><br>
-    <a href = "day0404/evtlsncb.html">4주차 evtlsncb</a><br>
-    <br>
-    <h5> • JAVA </h3>
-    <a href = "webpagetest/java/ch7/funcexprpession.js">funcexprpession</a><br>
-    <a href = "day0404/evtlsncb.html">4주차 evtlsncb</a><br>
+    <h1>정다운의 웹프로그래밍 실습기록</h1>
+    
+    <table>
+        <tr>
+            <th>주차</th>
+            <th>실습기록</th>
+        </tr>
+        <tr>
+            <td>1주차</td>
+            <td>
+                <b>HTML:</b> <a href="https://thisisday1.netlify.app">1주차</a>
+            </td>
+        </tr>
+        <tr>
+            <td>3주차</td>
+            <td>
+                <b>HTML:</b> <a href="day0321/ch3_test/table.html">table</a>, 
+                <a href="day0321/ch3_test/text_anchor.html">text_anchor</a>, 
+                <a href="day0321/ch3_test/text_anchorlnner.html">text_anchorlnner</a>, 
+                <a href="day0321/ch3_test/loginclass.html">47p loginclass</a>, 
+                <a href="sign-in/sign/sign-in.html">sign-in</a>
+            </td>
+        </tr>
+        <tr>
+            <td>4주차</td>
+            <td>
+                <b>HTML:</b> <a href="day0328/5_2.html">5_2</a>, 
+                <a href="day0328/attribute_basic.html">attribute_basic</a>, 
+                <a href="day0328/default_class.html">default_class</a>, 
+                <a href="day0328/default_multiClass.html">default_multiClass</a>, 
+                <a href="day0328/desc_descendants.html">desc_descendants</a>, 
+                <a href="day0328/desc_tableWithChildren.html">desc_tableWithChildren</a>, 
+                <a href="day0328/ect_structure.html">ect_structure</a>, 
+                <a href="day0328/etc_state.html">ect_state</a>, 
+                <a href="day0328/etc_structureFalse.html">ect_structureFalse</a>, 
+                <a href="day0328/size_basic.html">size_basic</a>
+            </td>
+        </tr>
+        <tr>
+            <td>5주차</td>
+            <td>
+                <b>HTML:</b> <a href="day0404/evthandle.html">evthandle</a>, 
+                <a href="day0404/evtlsncb.html">evtlsncb</a><br>
+                <b>JAVA:</b> <a href="webpagetest/java/ch7/funcexprpession.js">funcexprpession</a>
+            </td>
+        </tr>
+    </table>
+
+</body>
 </html>
