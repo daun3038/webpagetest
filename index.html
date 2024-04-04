@@ -25,10 +25,18 @@
         td a {
             color: #7e50a7; /* 링크 색상 변경 */
             text-decoration: none; /* 링크 밑줄 제거 */
+            display: block; /* 링크를 블록 요소로 설정하여 한 줄씩 표시되도록 함 */
+            margin-bottom: 5px; /* 링크 간 여백 추가 */
             transition: color 0.3s ease; /* 색상 변화에 따른 부드러운 전환 효과 추가 */
         }
         td a:hover {
             color: #cb77ba; /* 호버 상태일 때 링크 색상 변경 */
+        }
+        .html-cell {
+            background-color: #e6e6e6; /* HTML 셀 배경색 설정 */
+        }
+        .java-cell {
+            background-color: #f2f2f2; /* JAVA 셀 배경색 설정 */
         }
     </style>
 </head>
@@ -43,63 +51,69 @@
         </tr>
         <tr>
             <td>1주차</td>
-            <td>
-                <b>HTML:</b> <a href="https://thisisday1.netlify.app">1주차</a>
+            <td class="html-cell">
+                <b>HTML:</b> <br>
+                <a href="https://thisisday1.netlify.app">1주차</a>
             </td>
         </tr>
         <tr>
             <td>3주차</td>
-            <td>
-                <b>HTML:</b> <a href="day0321/ch3_test/table.html">table</a>, 
-                <a href="day0321/ch3_test/text_anchor.html">text_anchor</a>, 
-                <a href="day0321/ch3_test/text_anchorlnner.html">text_anchorlnner</a>, 
-                <a href="day0321/ch3_test/loginclass.html">47p loginclass</a>, 
-                <a href="sign-in/sign/sign-in.html">sign-in</a><br>
-                <b>JAVA:</b> <a href="webpagetest/webpagetest/java/ch3/arithmetic.js">chap 3 arithmetic</a>
-                <a href="webpagetest/webpagetest/java/ch3/boolean.js">chap 3 boolean</a>
-                <a href="webpagetest/webpagetest/java/ch3/number.js">chap 3 number</a>
-                <a href="webpagetest/webpagetest/java/ch3/string.js">chap 3 string</a>
+            <td class="html-cell">
+                <b>HTML:</b> <br>
+                <a href="day0321/ch3_test/table.html">table</a> <br>
+                <a href="day0321/ch3_test/text_anchor.html">text_anchor</a> <br>
+                <a href="day0321/ch3_test/text_anchorlnner.html">text_anchorlnner</a> <br>
+                <a href="day0321/ch3_test/loginclass.html">47p loginclass</a> <br>
+                <a href="sign-in/sign/sign-in.html">sign-in</a> <br>
+                <b>JAVA:</b> <br>
+                <a href="webpagetest/webpagetest/java/ch3/arithmetic.js">chap 3 arithmetic</a> <br>
+                <a href="webpagetest/webpagetest/java/ch3/boolean.js">chap 3 boolean</a> <br>
+                <a href="webpagetest/webpagetest/java/ch3/number.js">chap 3 number</a> <br>
+                <a href="webpagetest/webpagetest/java/ch3/string.js">chap 3 string</a> <br>
                 <a href="webpagetest/webpagetest/java/ch3/variable.js">chap 3 variable</a>
             </td>
         </tr>
         <tr>
             <td>4주차</td>
-            <td>
-                <b>HTML:</b> <a href="day0328/5_2.html">5_2</a>, 
-                <a href="day0328/attribute_basic.html">attribute_basic</a>, 
-                <a href="day0328/default_class.html">default_class</a>, 
-                <a href="day0328/default_multiClass.html">default_multiClass</a>, 
-                <a href="day0328/desc_descendants.html">desc_descendants</a>, 
-                <a href="day0328/desc_tableWithChildren.html">desc_tableWithChildren</a>, 
-                <a href="day0328/ect_structure.html">ect_structure</a>, 
-                <a href="day0328/etc_state.html">ect_state</a>, 
-                <a href="day0328/etc_structureFalse.html">ect_structureFalse</a>, 
-                <a href="day0328/size_basic.html">size_basic</a><br>
-                <b>JAVA:</b> <a href="webpagetest/webpagetest/java/ch5/breakcontinue.js">chap 5 breakcontinue</a>
-                <a href="webpagetest/webpagetest/java/ch5/condition_readline.js">chap 5 condition_readline</a>
-                <a href="webpagetest/webpagetest/java/ch5/condition.js">chap 5 condition</a>
-                <a href="webpagetest/webpagetest/java/ch5/elseifAge.js">chap 5 elseifAge</a>
-                <a href="webpagetest/webpagetest/java/ch5/elseiformat.js">chap 5 elseiformat</a>
-                <a href="webpagetest/webpagetest/java/ch5/elseigrade.js">chap 5 elseigrade</a>
-                <a href="webpagetest/webpagetest/java/ch5/for.js">chap 5 for</a>
-                <a href="webpagetest/webpagetest/java/ch5/kiosk.js">chap 5 kiosk</a>
-                <a href="webpagetest/webpagetest/java/ch5/switch.js">chap 5 switch</a>
-                <a href="webpagetest/webpagetest/java/ch5/switchformat.js">chap 5 switchformat</a>
-                <a href="webpagetest/webpagetest/java/ch5/switchgrade.js">chap 5 switchgrade</a>
+            <td class="html-cell">
+                <b>HTML:</b> <br>
+                <a href="day0328/5_2.html">5_2</a> <br>
+                <a href="day0328/attribute_basic.html">attribute_basic</a> <br>
+                <a href="day0328/default_class.html">default_class</a> <br>
+                <a href="day0328/default_multiClass.html">default_multiClass</a> <br>
+                <a href="day0328/desc_descendants.html">desc_descendants</a> <br>
+                <a href="day0328/desc_tableWithChildren.html">desc_tableWithChildren</a> <br>
+                <a href="day0328/ect_structure.html">ect_structure</a> <br>
+                <a href="day0328/etc_state.html">ect_state</a> <br>
+                <a href="day0328/etc_structureFalse.html">ect_structureFalse</a> <br>
+                <a href="day0328/size_basic.html">size_basic</a> <br>
+                <b>JAVA:</b> <br>
+                <a href="webpagetest/webpagetest/java/ch5/breakcontinue.js">chap 5 breakcontinue</a> <br>
+                <a href="webpagetest/webpagetest/java/ch5/condition_readline.js">chap 5 condition_readline</a> <br>
+                <a href="webpagetest/webpagetest/java/ch5/condition.js">chap 5 condition</a> <br>
+                <a href="webpagetest/webpagetest/java/ch5/elseifAge.js">chap 5 elseifAge</a> <br>
+                <a href="webpagetest/webpagetest/java/ch5/elseiformat.js">chap 5 elseiformat</a> <br>
+                <a href="webpagetest/webpagetest/java/ch5/elseigrade.js">chap 5 elseigrade</a> <br>
+                <a href="webpagetest/webpagetest/java/ch5/for.js">chap 5 for</a> <br>
+                <a href="webpagetest/webpagetest/java/ch5/kiosk.js">chap 5 kiosk</a> <br>
+                <a href="webpagetest/webpagetest/java/ch5/switch.js">chap 5 switch</a> <br>
+                <a href="webpagetest/webpagetest/java/ch5/switchformat.js">chap 5 switchformat</a> <br>
+                <a href="webpagetest/webpagetest/java/ch5/switchgrade.js">chap 5 switchgrade</a> <br>
                 <a href="webpagetest/webpagetest/java/ch5/while.js">chap 5 while</a>
-                
             </td>
         </tr>
         <tr>
             <td>5주차</td>
-            <td>
-                <b>HTML:</b> <a href="day0404/evthandle.html">evthandle</a>, 
-                <a href="day0404/evtlsncb.html">evtlsncb</a><br>
-                <b>JAVA:</b> <a href="webpagetest/java/ch7/funcexprpession.js">chap 7 funcexprpession</a>
-                <a href="webpagetest/webpagetest/java/ch7/funcformat.js">chap 7 funcformat</a>
-                <a href="webpagetest/webpagetest/java/ch7/funcvalue.js">chap 7 funcvalue</a>
-                <a href="webpagetest/webpagetest/java/ch7/local.js">chap 7 local</a>
-                <a href="webpagetest/webpagetest/java/ch7/return.js">chap 7 return</a>
+            <td class="html-cell">
+                <b>HTML:</b> <br>
+                <a href="day0404/evthandle.html">evthandle</a> <br>
+                <a href="day0404/evtlsncb.html">evtlsncb</a> <br>
+                <b>JAVA:</b> <br>
+                <a href="webpagetest/java/ch7/funcexprpession.js">chap 7 funcexprpession</a> <br>
+                <a href="webpagetest/webpagetest/java/ch7/funcformat.js">chap 7 funcformat</a> <br>
+                <a href="webpagetest/webpagetest/java/ch7/funcvalue.js">chap 7 funcvalue</a> <br>
+                <a href="webpagetest/webpagetest/java/ch7/local.js">chap 7 local</a> <br>
+                <a href="webpagetest/webpagetest/java/ch7/return.js">chap 7 return</a> <br>
                 <a href="webpagetest/webpagetest/java/ch8/evtcallback.js">chap 8 evtcallback</a>
             </td>
         </tr>
