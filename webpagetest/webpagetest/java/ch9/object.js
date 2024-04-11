@@ -90,7 +90,7 @@ let user = {
     pw : "1111",
     name : "lch",
     mobile : "010-8436-1397",
-    country : "한국"
+    country : "대한민국"
 }
 
 for(let info in user){
