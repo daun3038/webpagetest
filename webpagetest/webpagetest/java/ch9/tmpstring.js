@@ -1,4 +1,4 @@
-const n = '이창현';
+const n = '정다운';
 const age = 25;
 const height = 178.5;
 

@@ -11,7 +11,7 @@
 // console.log('값의 1 증가 :' + result);
 
 
-let plus = () => "플러스";
+let plus = () => "plus";
 
 let result = plus();
 console.log('A '+result);
