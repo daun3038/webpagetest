@@ -1,6 +1,6 @@
 function myTest(){
     if(1){
-        var x = 100;
+        var x = 200;
     }
     console.log(x);
 }
@@ -10,7 +10,7 @@ myTest();
 function myTest(){
     let x;
     if(1){
-        x = 100;
+        x = 200;
     }
     console.log(x);
 }
@@ -18,7 +18,7 @@ myTest();
 
 
 function myTest(){
-    const y = 100;
+    const y = 200;
     if(1){
         
     }

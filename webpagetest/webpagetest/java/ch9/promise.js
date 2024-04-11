@@ -1,7 +1,7 @@
 const pro1 = pid =>{
     return new Promise((resolve,reject)=>{
         setTimeout(()=>{
-            if(pid == "jam"){
+            if(pid == "jami"){
                 resolve('pro1 success');
             }else{
                 reject('pro1 fail');
@@ -22,7 +22,7 @@ const pro2 = ppw=>{
     });
 }
 
-const id = 'jam';
+const id = 'jami';
 const pw = '1111';
 
 pro1(id).
