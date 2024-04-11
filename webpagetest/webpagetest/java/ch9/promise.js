@@ -1,8 +1,39 @@
-var pro1 = new Promise(function(resolve,reject){
-    resolve('success');
-});
+const pro1 = pid =>{
+    return new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            if(pid == "jam"){
+                resolve('pro1 success');
+            }else{
+                reject('pro1 fail');
+            }
+        },1000);
+    });
+}
 
-pro1.then(function(result){
-    console.log('result',result);
+const pro2 = ppw=>{
+    return new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            if(ppw == '1111'){
+                resolve('pro2 success');
+            }else{
+                reject('pro2 fail');
+            }
+        },1000);
+    });
+}
+
+const id = 'jam';
+const pw = '1111';
+
+pro1(id).
+then(result=>{
+    console.log('result1',result);
+    return pro2(pw);
 })
-
+.then(result=>{
+    console.log('result2',result);
+})
+.catch(err=>{
+    console.log('err',err);
+    return Promise.reject(err);
+})
