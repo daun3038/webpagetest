@@ -1,42 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>👏🏻 Daun's Webpage 👏🏻</title>
     <style>
         body {
-            font-family: Arial, sans-serif; /* 폰트 설정 */
-            background-color: #f7f7f7; /* 배경색 설정 */
-            padding: 20px; /* 전체 내부 여백 설정 */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #e4e8f7 10%, #f7f7f7 90%);
+            padding: 40px;
+            color: #333;
+            line-height: 1.6;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
         }
         table {
-            width: 100%; /* 표 전체 너비 설정 */
-            border-collapse: collapse; /* 표 테두리 분리 설정 */
-            margin-bottom: 20px; /* 표와 다음 요소 간 여백 설정 */
+            width: 100%;
+            border-collapse: collapse;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
         }
         th, td {
-            padding: 10px; /* 셀 내부 여백 설정 */
-            text-align: center; /* 셀 텍스트 가운데 정렬 */
-            border: 1px solid #ddd; /* 테두리 스타일 설정 */
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ccc;
         }
         th {
-            background-color: #4e1381; /* 테이블 헤더 배경색 설정 */
-            color: white; /* 테이블 헤더 텍스트 색상 설정 */
+            background-color: #4a69bd;
+            color: white;
+            text-transform: uppercase;
         }
-        td a {
-            color: #7e50a7; /* 링크 색상 변경 */
-            text-decoration: none; /* 링크 밑줄 제거 */
-            display: block; /* 링크를 블록 요소로 설정하여 한 줄씩 표시되도록 함 */
-            margin-bottom: 5px; /* 링크 간 여백 추가 */
-            transition: color 0.3s ease; /* 색상 변화에 따른 부드러운 전환 효과 추가 */
+        td {
+            background-color: #ffffff;
+            color: #333;
         }
-        td a:hover {
-            color: #cb77ba; /* 호버 상태일 때 링크 색상 변경 */
+        a {
+            color: #6a89cc;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #4a69bd;
         }
         .html-cell {
-            background-color: #e6e6e6; /* HTML 셀 배경색 설정 */
+            background-color: #f8f9fa;
         }
         .java-cell {
-            background-color: #f2f2f2; /* JAVA 셀 배경색 설정 */
+            background-color: #e9ecef;
         }
     </style>
 </head>
